@@ -1,19 +1,21 @@
-# Study Helper Bot
+# Chat Assistant (Lab02)
 
-## Description
-The Study Helper Bot is a chatbot designed to assist students in their academic journey. It can answer subject-based questions, provide study tips, generate motivational messages, and offer basic study plans.
+**Description:**
+The Chat Assistant is an interactive tool for answering queries on a specific theme/topic, designed for creativity and user engagement.
 
-## Features
-- **Subject-Based Q&A:** Answer questions about various subjects like math, science, and history.
-- **Study Tips:** Share effective tips and tricks for studying smarter.
-- **Motivational Messages:** Encourage students with uplifting quotes and messages.
-- **Study Plans:** Suggest basic schedules and plans for effective studying.
+**Theme:** [Specify the theme here - for example, Astronomy, Literature, Tech Help, etc.]
 
-## Deployment
-The chatbot is hosted live on Render.com. You can access it using the following link:
-[Study Helper Bot Live](https://your-render-link.com)
+**Deployment:**
+The Chat Assistant is deployed live on Render.com. Access the link below to interact with it.
 
-## Usage Instructions
-1. Open the deployment link in your web browser.
-2. Interact with the chatbot by asking study-related questions or for tips.
-3. Use the features mentioned above to enhance your study experience.
+**Live Link:**
+[Insert Render URL once available]
+
+**Usage:**
+- Open the link provided.
+- Enter your queries in the chat window.
+- Get creative and meaningful responses from the assistant.
+
+---
+**Demo Details:**
+The project will be demoed in class on Thu Feb 13. It showcases a chat interface designed to make conversations engaging and tailored to the theme chosen.
