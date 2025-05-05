@@ -1,0 +1,22 @@
+Implementing a Chat Assistant (10%)
+
+Deliverables due Thu Feb 13 8:00am
+
+You will demonstrate your Chat Assistant in lecture on Thu Feb 13. You will have 5 minutes to give a quick overview and demo of your assistant in front of the class. Your code should be submitted to your lab02 repo.
+
+Your Chat Assistant should be live on Render.com. Please include a link to your site in your Lab02 README.
+
+Requirements:
+- Focus on a specific theme or topic for the Chat Assistant.
+
+Deliverables:
+- Code submission by Thu Feb 13 8:00am.
+
+Extensions (Optional):
+- N/A
+
+Team Tasks Breakdown:
+- CoderAgent: Implement the code for the Chat Assistant.
+- DocumenterAgent: Create documentation for the project.
+- PresenterAgent: Prepare a presentation for the demo.
+- VoiceOverAgent: Generate voice-over scripts for the presentation.
