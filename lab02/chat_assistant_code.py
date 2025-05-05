@@ -1,21 +1,32 @@
-import openai
-from flask import Flask, request, jsonify
+import random
 
-app = Flask(__name__)
+# A simple themed chat assistant example
+class ChatAssistant:
+    def __init__(self, theme):
+        self.theme = theme
+        self.responses = {
+            "greeting": ["Hello! How can I assist you today?", "Hi there! What would you like to talk about?"],
+            "topic": ["Let's talk about {}.", "I'm interested in {} too."],
+            "farewell": ["Goodbye! Have a great day!", "See you later!"]
+        }
+    
+    def get_response(self, user_input):
+        if "hello" in user_input.lower():
+            return random.choice(self.responses["greeting"])
+        elif "bye" in user_input.lower():
+            return random.choice(self.responses["farewell"])
+        else:
+            return random.choice(self.responses["topic"]).format(self.theme)
 
-# Theme-specific assistant: Travel Guide
-@api.route('/chat', methods=['POST'])
-def chat():
-    user_input = request.json.get('message')
-    response = openai.ChatCompletion.create(
-        model='gpt-4',
-        messages=[
-            {'role': 'system', 'content': 'You are a helpful travel guide.'},
-            {'role': 'user', 'content': user_input}
-        ]
-    )
-    answer = response.choices[0].message['content']
-    return jsonify({'reply': answer})
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+# Example usage
+if __name__ == "__main__":
+    theme = "space exploration"
+    assistant = ChatAssistant(theme)
+    print("Chat Assistant Ready! Type your message.")
+    while True:
+        user_input = input("You: ")
+        if user_input.lower() == "exit":
+            print("Goodbye!")
+            break
+        response = assistant.get_response(user_input)
+        print("Assistant: ", response)
