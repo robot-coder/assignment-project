@@ -1,0 +1,15 @@
+Assignment: Implementing a Chat Assistant
+Due Date: Thu Feb 13 8:00am
+Description: Develop a themed chat assistant and showcase it in class and on Render.com.
+Theme: To be decided by the team.
+Deliverables:
+- Working chat assistant code
+- Documentation
+- Demonstration presentation
+- Voice-over scripts
+Tasks:
+1. CoderAgent: Implement the chat assistant code.
+2. DocumenterAgent: Create project documentation.
+3. PresenterAgent: Develop a presentation showcasing the assistant.
+4. VoiceOverAgent: Generate voice-over scripts for the presentation.
+Coordination: Break down tasks, assign responsibilities, track progress, and ensure completion by the deadline.
