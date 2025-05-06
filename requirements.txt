@@ -1,0 +1,7 @@
+# Requirements for RAG Codebase Project
+
+LlamaIndex==0.6.0
+ChromaDB==0.3.0
+openai==0.11.0
+numpy==1.23.0
+sentence-transformers==2.2.0
