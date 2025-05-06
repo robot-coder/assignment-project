@@ -1,32 +1,65 @@
-# Retrieval-Augmented Generation for Codebases
+# Agent Tool Documentation
 
-## Project Overview
-This project aims to build a Retrieval-Augmented Generation (RAG) system that allows for exploration and querying of large codebases. It utilizes LlamaIndex for indexing and ChromaDB for vector storage, creating a pipeline to retrieve relevant code snippets for answering questions effectively. The codebases utilized are xv6-riscv (in C) and llama_index (in Python).
+## Overview
 
-## Objectives
-- Implement a baseline RAG system that adequately indexes codebases and allows for meaningful queries.
-- Experiment with different chunking strategies and metadata to optimize retrieval.
+This project consists of an Agent that integrates various functionalities using LlamaIndex. The main features include a simple binary tree implementation and interaction with MCP (Model Context Protocol) tools such as Playwright.
 
-## Setup Instructions
+## Table of Contents
+
+- [Functions as Tools](#functions-as-tools)
+- [MCP Interaction](#mcp-interaction)
+- [How to Use](#how-to-use)
+
+## Functions as Tools
+
+### `SimpleTree` Class
+
+This class is a basic implementation of a binary tree with the following methods:
+- `insert(value)`: Inserts a new value into the tree.
+- `inorder_traversal()`: Returns a list of values from the tree in inorder.
+
+### File Operations
+
+Two functions for file handling:
+- `read_file(file_path)`: Reads content from a specified file.
+- `write_file(file_path, content)`: Writes the given content to a specified file.
+
+### Usage Example
+
+To use the `SimpleTree`:
+```python
+from agent_tool import SimpleTree
+
+tree = SimpleTree(10)
+numbers = [5, 15, 3, 7, 12, 18]
+for number in numbers:
+    tree.insert(number)
+print("Inorder Traversal of the Tree:", tree.inorder_traversal())
+```
+
+## MCP Interaction
+
+The MCP interaction is implemented using Playwright to take a screenshot of a webpage.
+
+### Usage Example
+
+To use the Playwright example:
+```python
+from mcp_interaction import run_playwright_example
+
+run_playwright_example('https://example.com')
+```
+
+## How to Use
+
 1. Clone the repository.
-2. Install required packages using `pip install -r requirements.txt`.
-3. Set up API keys for any external services (if necessary).
-4. Run the indexing script to process the codebases.
-5. Use the querying script to ask questions about the indexed data.
+2. Install required libraries:
+   ```bash
+   pip install playwright
+   playwright install
+   ```
+3. Run the scripts as demonstrated in the usage examples.
 
-## Methodologies
-- **Indexing**: Utilized LlamaIndex CodeSplitter to segment code into meaningful chunks while generating embeddings stored in ChromaDB.
-- **Querying**: Integrated a querying mechanism that employs an LLM to answer questions by leveraging the retrieved code snippets.
+## Conclusion
 
-## Results
-- Metrics such as Precision@K and Recall will be documented in the comparative analysis.
-- Insights from various chunking and augmentation strategies are summarized.
-
-## Test Queries
-- A comprehensive list of test queries utilized for evaluation will be provided.
-
-## Acknowledgments
-- A special mention to relevant resources and documentations that guided the development of this project.
-
-## License
-This project is licensed under the MIT License.
+This project integrates programming constructs and external tools to create functional and interactive agents. Future improvements could include enhancing the tree structure and exploring additional MCP interactions.
