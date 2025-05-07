@@ -1,0 +1,5 @@
+# Key Features
+- **Functionality**: Basic binary tree implementation allowing adding, searching, and manipulating tree nodes.
+- **Integration**: Showcases integration with LlamaIndex for managing functionality.
+- **User Interaction**: Provides capabilities for users to interact with the binary tree.
+- **File Operations**: Supports file handling for reading and writing data.
