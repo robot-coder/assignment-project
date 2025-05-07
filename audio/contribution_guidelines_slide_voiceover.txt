@@ -1,0 +1,1 @@
+Contribution Guidelines: Fork the repository, clone it locally, create a branch for your feature, make changes, commit, push to your fork, and submit a pull request.
