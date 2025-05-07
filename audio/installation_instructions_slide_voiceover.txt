@@ -1,0 +1,1 @@
+Installation Instructions: To install the project, clone the repository using 'git clone', navigate to the project directory, and run the main script using 'python main.py'.
