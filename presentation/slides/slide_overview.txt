@@ -1,0 +1,1 @@
+This project is a demonstration of integrating various functionalities to build a simple binary tree using C programming language.
