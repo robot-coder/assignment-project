@@ -1,0 +1,1 @@
+Key Features and Functionality: The project provides a robust implementation of binary trees, including methods for inserting, deleting, and traversing nodes. It allows users to input values interactively and offers clear usage guidelines.
