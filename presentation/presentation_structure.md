@@ -1,0 +1,4 @@
+- Key Features of the Project
+- Technologies Used
+- Installation Instructions
+- Contribution Guidelines
