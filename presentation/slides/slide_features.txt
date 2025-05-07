@@ -1,0 +1,4 @@
+Key Features:
+1. Fundamentals of constructing a binary tree.
+2. Methods for inserting new values and traversing the tree.
+3. Command line interactions for managing and visualizing the tree structure.
